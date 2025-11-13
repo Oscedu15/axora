@@ -6,6 +6,8 @@ import { headerData } from "./Navigation/menuData";
 import HeaderLink from "./Navigation/headerLinks";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import Sidebar from "./Sidebar";
+import MobileHeaderLink from "./Navigation/mobileHeaderLinks";
 
 const Header: React.FC = () => {
   const [sticky, setSticky] = useState(false);
@@ -55,6 +57,7 @@ const Header: React.FC = () => {
                 height="24"
               />
             </Link>
+
             <button
               className=" block p-2 cursor-pointer group"
               aria-label="Toggle mobile menu"
@@ -64,18 +67,151 @@ const Header: React.FC = () => {
               <span className="block w-4 h-0.5 bg-white mt-1.5 transition-all duration-300 ease-in-out group-hover:w-6"></span>
               <span className="block  w-6 h-0.5 mt-1.5 bg-white"></span>
             </button>
-            <button
-              className="lg:hidden block p-2 cursor-pointer group"
-              aria-label="Toggle mobile menu"
-              onClick={() => setIsOpenSidebar(!navbarOpen)}
-            >
-              <span className="block w-6 h-0.5 bg-white"></span>
-              <span className="block w-4 h-0.5 bg-white mt-1.5 transition-all duration-300 ease-in-out group-hover:w-6"></span>
-              <span className="block  w-6 h-0.5 mt-1.5 bg-white"></span>
-            </button>
           </div>
+          <button
+            className="lg:hidden block p-2 cursor-pointer group"
+            aria-label="Toggle mobile menu"
+            onClick={() => setNavbarOpen(!navbarOpen)}
+          >
+            <span className="block w-6 h-0.5 bg-white"></span>
+            <span className="block w-4 h-0.5 bg-white mt-1.5 transition-all duration-300 ease-in-out group-hover:w-6"></span>
+            <span className="block  w-6 h-0.5 mt-1.5 bg-white"></span>
+          </button>
         </div>
       </header>
+      {/* Mobile */}
+      <div
+        ref={mobileMenuRef}
+        className={`lg:hidden fixed right-0 top-0 h-screen w-full sm:w-[50%] lg:w-[40%] shadow-2xl bg-dark-blur 
+          backdrop-blur-lg p-10 z-50 transform transition-transform overflow-y-scroll
+           duration-500 ease-in-out
+          ${navbarOpen ? "translate-x-0" : "translate-x-[110%]"} `}
+      >
+        <div className="text-white flex w-full justify-between items-center">
+          <Logo />
+          <button
+            className=""
+            onClick={() => setNavbarOpen(false)}
+            aria-label="Close mobile menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6112 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <nav className="flex flex-col items-start py-4">
+          {headerData?.map((item, index) => (
+            <MobileHeaderLink key={index} item={item} />
+          ))}
+        </nav>
+        {/* Search */}
+        <h3 className="font-chakrapetch pb-3">Search Now!</h3>
+        <form className="search-box relative flex">
+          <input
+            type="text"
+            placeholder="Search Here..."
+            className="bg-white ps-3 h-[45px]"
+            required
+          />
+          <button className="absolute right-0 h-full border-l border-border cursor-pointer">
+            <Icon icon="ei:search" width="50" height="30" />
+          </button>
+        </form>
+        {/* Contact Info */}
+        <h3 className="font-chakrapetch pb-3 pt-8">Contact Info</h3>
+        <div className="space-y-3">
+          <div className="">
+            <span className="font-chakrapetch text-pera-light">Phone</span>
+            <br />
+            <Link
+              href="/contact"
+              className="text-white font-unbounded font-normal"
+            >
+              (+91) 1232 3456
+            </Link>
+          </div>
+          <div className="">
+            <span className="font-chakrapetch text-pera-light">Email</span>
+            <br />
+            <Link
+              href="/contact"
+              className="text-white font-unbounded font-normal"
+            >
+              info@axora.com
+            </Link>
+          </div>
+          <div className="">
+            <span className="font-chakrapetch text-pera-light">Address</span>
+            <br />
+            <Link
+              href="/contact"
+              className="text-white font-unbounded font-normal"
+            >
+              FF - 42, Procube Complex Vadodara
+            </Link>
+          </div>
+        </div>
+        {/* Social */}
+        <h3 className="font-chakrapetch pb-3 pt-8">Contact Info</h3>
+        <div className="social-icons flex gap-3">
+          <Link href="#">
+            <Icon
+              icon="gg:facebook"
+              width="30"
+              height="30"
+              className="text-white p-1 rounded-sm cursor-pointer
+            bg-blue-600 transition duration-500
+            hover:-translate-y-1"
+            />
+          </Link>
+          <Link href="#">
+            <Icon
+              icon="gg:instagram"
+              width="30"
+              height="30"
+              className="text-white p-1 rounded-sm cursor-pointer
+            bg-pink-500 transition duration-500
+            hover:-translate-y-1"
+            />
+          </Link>
+          <Link href="#">
+            <Icon
+              icon="mdi:youtube"
+              width="30"
+              height="30"
+              className="text-white p-1 rounded-sm cursor-pointer
+            bg-red-500 transition duration-500
+            hover:-translate-y-1"
+            />
+          </Link>
+          <Link href="#">
+            <Icon
+              icon="basil:linkedin-solid"
+              width="30"
+              height="30"
+              className="text-white p-1 rounded-sm cursor-pointer
+            bg-blue-400 transition duration-500
+            hover:-translate-y-1"
+            />
+          </Link>
+        </div>
+      </div>
+      <Sidebar
+        isOpenSidebar={isOpenSidebar}
+        setIsOpenSidebar={setIsOpenSidebar}
+      />
     </>
   );
 };

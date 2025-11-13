@@ -44,7 +44,7 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
           overflow-hidden opacity-0 scale-95 invisible group-hover:opacity-100 group-hover:scale-100
           group-hover:visible transition-all duration-300`}
           >
-            {item?.submenu.map((subItem: any, index: number) => (
+            {item?.submenu.map((subItem, index: number) => (
               <Link
                 key={index}
                 href={subItem.href}
