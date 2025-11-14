@@ -32,3 +32,26 @@ export const solutionData = [
       "Equip your teams with skills and knowledge tailored to your corporate",
   },
 ];
+
+export const companiesData = [
+  {
+    title: "Traning & Development",
+    image: "/images/companies/brand-1.webp",
+  },
+  {
+    title: "Traning & Development",
+    image: "/images/companies/brand-2.webp",
+  },
+  {
+    title: "Traning & Development",
+    image: "/images/companies/brand-3.webp",
+  },
+  {
+    title: "Traning & Development",
+    image: "/images/companies/brand-4.webp",
+  },
+  {
+    title: "Traning & Development",
+    image: "/images/companies/brand-5.webp",
+  },
+];
