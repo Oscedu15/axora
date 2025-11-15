@@ -33,7 +33,7 @@ const Companies: React.FC = () => {
               spaceBetween={30}
               slidesPerView={5}
               loop={true}
-              speed={3000}
+              speed={4000}
               autoplay={{
                 delay: 0,
                 disableOnInteraction: false,
