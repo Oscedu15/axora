@@ -55,3 +55,46 @@ export const companiesData = [
     image: "/images/companies/brand-5.webp",
   },
 ];
+
+export const projectsData = [
+  {
+    category: "Web",
+    title: "Blogging CMS",
+    description:
+      "A custom content management system for bloggers, powered by PHP and MySQL, with features like rich text editing, SEO optimization, and social media integration for easy content creation and sharing.",
+    image: "/images/projects/project-03.jpg",
+    link: "/projects/pagina",
+  },
+  {
+    category: "Mobile",
+    title: "Fitness Tracker App",
+    description:
+      "A cross-platform mobile app developed with Flutter, incorporating GPS tracking, workout logging, and personalized health insights to help users achieve their fitness goals on the go.",
+    image: "/images/projects/project-02.jpg",
+    link: "/projects/pagina",
+  },
+  {
+    category: "Web",
+    title: "Blogging CMS",
+    description:
+      "A custom content management system for bloggers, powered by PHP and MySQL, with features like rich text editing, SEO optimization, and social media integration for easy content creation and sharing.",
+    image: "/images/projects/project-03.jpg",
+    link: "/projects/pagina",
+  },
+  {
+    category: "Mobile",
+    title: "Fitness Tracker App",
+    description:
+      "A cross-platform mobile app developed with Flutter, incorporating GPS tracking, workout logging, and personalized health insights to help users achieve their fitness goals on the go.",
+    image: "/images/projects/project-02.jpg",
+    link: "/projects/pagina",
+  },
+  {
+    category: "Mobile",
+    title: "Fitness Tracker App",
+    description:
+      "A cross-platform mobile app developed with Flutter, incorporating GPS tracking, workout logging, and personalized health insights to help users achieve their fitness goals on the go.",
+    image: "/images/projects/project-02.jpg",
+    link: "/projects/pagina",
+  },
+];
