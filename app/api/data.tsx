@@ -98,3 +98,27 @@ export const projectsData = [
     link: "/projects/pagina",
   },
 ];
+
+export const testimonialData = [
+  {
+    id: 1,
+    name: "John Doe",
+    position: "CEO, Company A",
+    image: "/images/testimonials/user.jpg",
+    text: "This company provided excellent service and support throughout our project. Highly recommended! This company provided excellent service and support throughout our project. Highly recommended!",
+  },
+  {
+    id: 2,
+    name: "Ricardo Garcia",
+    position: "CEO, Company A",
+    image: "/images/testimonials/user2.jpg",
+    text: "This company provided excellent service and support throughout our project. Highly recommended! This company provided excellent service and support throughout our project. Highly recommended!",
+  },
+  {
+    id: 3,
+    name: "Baldomero Rodriguez",
+    position: "CEO, Company A",
+    image: "/images/testimonials/user3.jpg",
+    text: "This company provided excellent service and support throughout our project. Highly recommended! This company provided excellent service and support throughout our project. Highly recommended!",
+  },
+];
