@@ -1,9 +1,11 @@
 import Commitment from "@/components/Home/Commitment";
 import Companies from "@/components/Home/Companies";
 import Hero from "@/components/Home/Hero";
+import Pricing from "@/components/Home/Pricing";
 import Proccess from "@/components/Home/Process";
 import Projects from "@/components/Home/Projects";
 import Solution from "@/components/Home/Solution";
+import Testimonial from "@/components/Home/Testimonial";
 
 export default function Home() {
   return (
@@ -13,8 +15,10 @@ export default function Home() {
         <Solution />
         <Companies />
         <Commitment />
-        <Proccess/>
-        <Projects/>
+        <Proccess />
+        <Projects />
+        <Testimonial />
+        <Pricing />
       </main>
     </>
   );
