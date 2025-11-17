@@ -187,7 +187,11 @@ const Footer: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-between items-center border-t mt-10 pt-6 text-center sm:text-left">
             <p className="mb-3 sm:mb-0 text-[15px] text-foottext">
               2025. All rights reserved by
-              <Link href="#" target="_blank" className="hover:text-prim">
+              <Link
+                href="https://portfolio-nextjs-pied-six.vercel.app/"
+                target="_blank"
+                className="hover:text-prim"
+              >
                 Oscar Garcia
               </Link>
             </p>
