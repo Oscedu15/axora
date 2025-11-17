@@ -23,9 +23,9 @@ const Hero: React.FC = () => {
       px-4 h-full flex flex-col justify-center items-start group"
       >
         <div className="hero-content text-white">
-          <h2 className="text-white md:text-60 sm:text-40 text-28 mb-9 lg:mb-3 w-full lg:w-3/4">
+          <h1 className="text-white text-center md:text-start mb-9 lg:mb-3 w-full lg:w-3/4">
             Transforming Ideas Into Reakity
-          </h2>
+          </h1>
           <Link
             href="/about"
             className="text-white bg-dark h-[50px] text-16 lg:text-sm w-fit rounded-full font-chakrapetch font-semibold flex gap-2 ps-4 pe-2 py-2 justify-center items-center
