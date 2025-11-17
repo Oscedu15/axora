@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Chakra_Petch, Mona_Sans, Poppins, Unbounded } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header";
+import Footer from "@/components/Layout/Footer";
 
 const chakraPetch = Chakra_Petch({
   variable: "--font-chakraPetch",
@@ -44,6 +45,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
