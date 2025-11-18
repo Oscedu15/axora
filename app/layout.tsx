@@ -38,12 +38,11 @@ export const metadata: Metadata = {
       url: "https://portfolio-nextjs-pied-six.vercel.app/",
     },
   ],
-  // viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   openGraph: {
     title: "Axora  Office",
     description: "Una Clinica dedicada al fortalecimiento de tu salud",
-    url: "https://medicare-nine-steel.vercel.app/",
+    url: "https://axora-bay.vercel.app/",
     siteName: "Axora Office",
     images: [
       {

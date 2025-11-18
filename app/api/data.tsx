@@ -254,3 +254,54 @@ export const footerLinks = [
     title: "Privacy",
   },
 ];
+
+export const teamsData = [
+  {
+    id: 1,
+    name: "Pedro",
+    image: "/images/team/team-1.webp",
+    post: "Marketing",
+  },
+  {
+    id: 2,
+    name: "Gabriel",
+    image: "/images/team/team-2.webp",
+    post: "Development",
+  },
+  {
+    id: 3,
+    name: "Gabriela",
+    image: "/images/team/team-3.webp",
+    post: "Leadership",
+  },
+  {
+    id: 4,
+    name: "Gabriel",
+    image: "/images/team/team-4.webp",
+    post: "Marketing",
+  },
+  {
+    id: 5,
+    name: "Pedro",
+    image: "/images/team/team-5.webp",
+    post: "Leadership",
+  },
+  {
+    id: 6,
+    name: "Gabriela",
+    image: "/images/team/team-6.webp",
+    post: "Development",
+  },
+  {
+    id: 7,
+    name: "Gabriel",
+    image: "/images/team/team-7.webp",
+    post: "Leadership",
+  },
+  {
+    id: 8,
+    name: "Gabriel",
+    image: "/images/team/team-8.webp",
+    post: "Marketing",
+  },
+];
