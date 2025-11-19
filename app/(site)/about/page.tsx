@@ -77,7 +77,7 @@ export default function About() {
               </h4>
               <div className="solution-icon border mt-4 border-dark w-[70px] h-[70px] rounded-full flex justify-center items-center prim-grident transition-transform duration-500 group-hover:rotate-y-360 mb-12">
                 <Icon
-                  icon="la:ward"
+                  icon="tdesign:location"
                   width="40"
                   height="40"
                   className="group-hover:text-white transition-colors duration-500"

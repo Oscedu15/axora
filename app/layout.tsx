@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         url: "/logo.jpg",
         width: 1200, // Ancho de la imagen
         height: 630, // Alto de la imagen
-        alt: "Dental Clean Logo", // Texto alternativo para la imagen
+        alt: "Axora Office Logo", // Texto alternativo para la imagen
         type: "image.jpg",
       },
     ],
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dental Clean +",
+    title: "Axora Office",
     description: "Ecoemprendimiento en acción.",
     images: ["/logo.jpg"],
   },
