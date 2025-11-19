@@ -6,7 +6,6 @@ import Pricing from "@/components/Home/Pricing";
 import Proccess from "@/components/Home/Process";
 import Projects from "@/components/Home/Projects";
 import Solution from "@/components/Home/Solution";
-// import Team from "@/components/Home/Team";
 import Testimonial from "@/components/Home/Testimonial";
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
         <Testimonial />
         <Pricing />
         <Blog />
-        {/* <Team /> */}
       </main>
     </>
   );
