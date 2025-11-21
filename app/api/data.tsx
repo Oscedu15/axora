@@ -305,3 +305,72 @@ export const teamsData = [
     post: "Marketing",
   },
 ];
+
+export const servicesData = [
+  {
+    icon: "tdesign:location",
+    title: "Bussines",
+    description:
+      "Bussines ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus et amet, molestias est dignissimos laudantium cum, ipsum incidunt adipisci",
+    ref: "/services/business",
+    image: "/images/services/service-01.webp",
+    slug: "business",
+    imagedetails: "/images/servicedetails/service-01.webp",
+    imagedetails2: "/images/servicedetails/service-02.webp",
+  },
+  {
+    icon: "lucide-lab:baseball",
+    title: "Marketing",
+    description:
+      "Marketing ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus et amet, molestias est dignissimos laudantium cum, ipsum incidunt adipisci",
+    ref: "/services/marketing",
+    image: "/images/services/service-02.webp",
+    slug: "marketing",
+    imagedetails: "/images/servicedetails/service-01.webp",
+    imagedetails2: "/images/servicedetails/service-02.webp",
+  },
+  {
+    icon: "lucide-lab:bull-head",
+    title: "Developer",
+    description:
+      "Developer ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus et amet, molestias est dignissimos laudantium cum, ipsum incidunt adipisci",
+    ref: "/services/developer",
+    image: "/images/services/service-03.webp",
+    slug: "developer",
+    imagedetails: "/images/servicedetails/service-01.webp",
+    imagedetails2: "/images/servicedetails/service-02.webp",
+  },
+  {
+    icon: "lucide-lab:cat-big",
+    title: "Contable",
+    description:
+      "Contable ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus et amet, molestias est dignissimos laudantium cum, ipsum incidunt adipisci",
+    ref: "/services/contable",
+    image: "/images/services/service-01.webp",
+    slug: "contable",
+    imagedetails: "/images/servicedetails/service-01.webp",
+    imagedetails2: "/images/servicedetails/service-02.webp",
+  },
+  {
+    icon: "lucide-lab:burger",
+    title: "Comunication",
+    description:
+      "Comunication ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus et amet, molestias est dignissimos laudantium cum, ipsum incidunt adipisci",
+    ref: "/services/comunication",
+    image: "/images/services/service-02.webp",
+    slug: "comunication",
+    imagedetails: "/images/servicedetails/service-01.webp",
+    imagedetails2: "/images/servicedetails/service-02.webp",
+  },
+  {
+    icon: "material-symbols-light:2mp-rounded",
+    title: "RRHH",
+    description:
+      "RRHH ipsum dolor sit amet consectetur adipisicing elit. Quas doloribus et amet, molestias est dignissimos laudantium cum, ipsum incidunt adipisci",
+    ref: "/services/rrhh",
+    image: "/images/services/service-03.webp",
+    slug: "rrhh",
+    imagedetails: "/images/servicedetails/service-01.webp",
+    imagedetails2: "/images/servicedetails/service-02.webp",
+  },
+];
