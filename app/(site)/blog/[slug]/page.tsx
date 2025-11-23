@@ -1,11 +1,15 @@
 "use client";
+import React from "react";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 import HeroSub from "@/components/SharedComponents/HeroSub";
 
-export default function BlogDetails() {
+type Props = { params: Promise<{ slug: string }> };
+
+const BlogDetails = ({ params }: Props) => {
+  const { slug } = React.use(params);
   const breadcrumbLiks = [
     {
       href: "/",
@@ -32,4 +36,5 @@ export default function BlogDetails() {
       </div>
     </>
   );
-}
+};
+export default BlogDetails;

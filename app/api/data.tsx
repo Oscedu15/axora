@@ -374,3 +374,30 @@ export const servicesData = [
     imagedetails2: "/images/servicedetails/service-02.webp",
   },
 ];
+
+export const portfolioData = [
+  {
+    image: "/images/protfolio/project-1.webp",
+    slug: "contable",
+    title: "Prueba Portfolio",
+    category: "Category",
+  },
+  {
+    image: "/images/protfolio/project-2.webp",
+    slug: "comunication",
+    title: "Prueba Portfolio2",
+    category: "Category",
+  },
+  {
+    image: "/images/protfolio/project-3.webp",
+    slug: "developer",
+    title: "Prueba Portfolio3",
+    category: "Category",
+  },
+  {
+    image: "/images/protfolio/project-4.webp",
+    slug: "rrhh",
+    title: "Prueba Portfolio4",
+    category: "Category",
+  },
+];

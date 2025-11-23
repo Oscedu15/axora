@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       <footer className="pt-10 relative bg-white">
         <div className="container m-auto px-4 max-w-7xl">
           <div className="flex  flex-col justify-between lg:flex-row lg:items-center border-b pb-10 mb-10 gap-6">
-            <div className="flex flex-wrap gap-6 md:flex-nowrap">
+            <div className="flex flex-wrap gap-6 md:flex-nowrap justify-center lg:justify-start">
               <div className="flex items-start text-foot-text text-[15px]">
                 <Icon
                   icon="weui:location-outlined"
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center lg:justify-start">
               <Link
                 href="#"
                 className="text-muted hover:text-prim transition-colors"
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
                 corrupti natus minima deleniti! Maiores aspernatur harum natus
                 nostrum? Cupiditate, fugit quidem?
               </p>
-              <div className="flex flex-wrap gap-3 items-center pt-5">
+              <div className="flex flex-wrap gap-3 items-center justify-center lg:justify-start pt-5">
                 <Image
                   src="/images/footer/award-logo-1.webp"
                   alt="award-logo-1"
@@ -162,7 +162,7 @@ const Footer: React.FC = () => {
               >
                 Get App
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <Link href="#">
                   <Image
                     src="/images/footer/app.webp"
