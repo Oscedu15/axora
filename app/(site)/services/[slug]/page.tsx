@@ -48,7 +48,6 @@ const faqData: FAQItem[] = [
 const ServicesDetails = ({ params }: Props) => {
   const { slug } = React.use(params);
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  console.log(slug);
 
   const service = servicesData.find((s) => s.slug === slug);
   if (!service) return notFound();
@@ -150,7 +149,7 @@ const ServicesDetails = ({ params }: Props) => {
                   className="w-full rounded-lg h-full"
                 />
               </div>
-              <h4 className="font-unbounded font-medium text-3xl">
+              <h4 className="font-unbounded font-medium text-3xl text-center lg:text-start">
                 Our Range of Customer Services
               </h4>
               <p className="pb-4 text-pera-dark text-16 leading-6">
@@ -195,7 +194,7 @@ const ServicesDetails = ({ params }: Props) => {
           </div>
           <div className="w-full lg:w-[40%] lg:self-start lg:sticky top-20 space-y-5 py-5">
             <div className="border border-gray-100 p-5 shadow-lg rounded-xl">
-              <h4 className="text-black pb-5 text-center lg:text-start">
+              <h4 className="text-black pb-5 text-center lg:text-start font-semibold">
                 More Services
               </h4>
               <div className="flex flex-col gap-5">
@@ -212,7 +211,9 @@ const ServicesDetails = ({ params }: Props) => {
               </div>
             </div>
             <div className="border-gray-100 shadow-lg bg-white p-5 rounded-xl">
-              <h4 className="text-black">Tags </h4>
+              <h4 className="text-black text-center lg:text-start mb-2">
+                Tags{" "}
+              </h4>
               <div className="flex flex-wrap gap-2 p-2">
                 {[
                   "Branding",
