@@ -83,7 +83,7 @@ const ServicesDetails = ({ params }: Props) => {
           <div className="w-full lg:w-[60%]">
             <div
               className="bg-white rounded-2xl 
-             space-y-6 p-5"
+             space-y-6 p-5 text-center md:text-start"
             >
               {service?.image && (
                 <Image
@@ -100,7 +100,7 @@ const ServicesDetails = ({ params }: Props) => {
               >
                 {service.title}
               </h4>
-              <p className="pb-4 text-pera-dark text-16 leading-6">
+              <p className="text-pera-dark text-16 leading-6">
                 {service.description}
               </p>
               <p className="pb-4 text-pera-dark text-16 leading-6">

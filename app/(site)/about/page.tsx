@@ -23,7 +23,7 @@ export default function About() {
   return (
     <>
       <HeroSub title="About" description="" breadcrumbLinks={breadcrumbLiks} />
-      <div className="overflow-hidden py-14 lg:py-18 xl:py-22 bg-prim-light">
+      <div className="overflow-hidden py-14 lg:py-18 bg-prim-light">
         <div
           className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 space-y-14
           "
@@ -60,7 +60,7 @@ export default function About() {
               <h4 className="group-hover:text-white transition-colors duration-500 font-medium font-unbounded text-18 mt-4 text-center">
                 Innovative Solutios
               </h4>
-              <div className="solution-icon border mt-4 border-dark w-[70px] h-[70px] rounded-full flex justify-center items-center prim-grident transition-transform duration-500 group-hover:rotate-y-360 mb-12">
+              <div className="solution-icon border mt-4 border-dark w-[70px] h-[70px] rounded-full flex justify-center items-center prim-grident transition-transform duration-500 group-hover:rotate-y-360 mb-12 mx-auto md:mx-0">
                 <Icon
                   icon="famicons:bulb-outline"
                   width="40"
@@ -80,7 +80,7 @@ export default function About() {
               <h4 className="group-hover:text-white transition-colors duration-500 font-medium font-unbounded text-18 mt-4 text-center">
                 Innovative Solutios
               </h4>
-              <div className="solution-icon border mt-4 border-dark w-[70px] h-[70px] rounded-full flex justify-center items-center prim-grident transition-transform duration-500 group-hover:rotate-y-360 mb-12">
+              <div className="solution-icon border mt-4 border-dark w-[70px] h-[70px] rounded-full flex justify-center items-center prim-grident transition-transform duration-500 group-hover:rotate-y-360 mb-12  mx-auto md:mx-0">
                 <Icon
                   icon="tdesign:location"
                   width="40"
@@ -100,7 +100,7 @@ export default function About() {
               <h4 className="group-hover:text-white transition-colors duration-500 font-medium font-unbounded text-18 mt-4 text-center">
                 Award-Winning Expertise
               </h4>
-              <div className="solution-icon border mt-4 border-dark w-[70px] h-[70px] rounded-full flex justify-center items-center prim-grident transition-transform duration-500 group-hover:rotate-y-360 mb-12">
+              <div className="solution-icon border mt-4 border-dark w-[70px] h-[70px] rounded-full flex justify-center items-center prim-grident transition-transform duration-500 group-hover:rotate-y-360 mb-12 mx-auto md:mx-0">
                 <Icon
                   icon="streamline-plump:customer-support-3"
                   width="40"
@@ -116,7 +116,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="overflow-hidden py-14 lg:py-18 xl:py-22 bg-prim-light">
+      <div className="overflow-hidden py-14 lg:py-18 bg-prim-light">
         <div
           className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 flex lg:flex-row
         flex-col items-start gap-5"
@@ -137,7 +137,7 @@ export default function About() {
                     Our mission is empower businesses through innovate best
                     solution, exceptional service.
                   </p>
-                  <ul className="space-y-2 ">
+                  <ul className="space-y-2">
                     <li className="flex gap-1">
                       <Icon icon="tabler:arrow-right" width="12" height="24" />
                       Exceptonial Customer

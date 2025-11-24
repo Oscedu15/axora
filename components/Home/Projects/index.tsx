@@ -66,7 +66,7 @@ const Projects: React.FC = () => {
                       <h4 className="pt-2 pb-4 text-16 lg:text-24 font-unbounded">
                         {project.title}
                       </h4>
-                      <p className="text-prim-dark font-normal text-14 pb-5">
+                      <p className="text-prim-dark font-normal pb-5">
                         {project.description}
                       </p>
                       <Link

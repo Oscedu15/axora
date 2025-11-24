@@ -15,14 +15,14 @@ const Commitment: React.FC = () => {
   ];
   return (
     <>
-      <section className="bg-light overflow-hidden py-14 lg:py-18 xl:22 bg-prim-light">
+      <section className="bg-light overflow-hidden py-14 lg:py-18 bg-prim-light">
         <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 space-y-8">
           <div className="commitment-content bg-white p-8 rounded-2xl">
             <div className="">
-              <span className="sub-title  mx-auto text-14 font-chakrapetch capitalize ps-5 pe-3 bg-prim text-white py-1 rounded-xl relative">
+              <span className="sub-title mx-auto text-14 font-chakrapetch capitalize ps-5 pe-3 bg-prim text-white py-1 rounded-xl relative">
                 Chose the Best
               </span>
-              <h2 className=" mt-4 font-chakrapetch mx-auto lg:text-35 font-semibold">
+              <h2 className="text-center lg:text-start mt-4 font-chakrapetch mx-auto lg:text-35 font-semibold">
                 Committed Delivering Measurable Results and Building from the
                 Lasting Relationships through out trust and innovation and
                 corporate shared
@@ -48,7 +48,7 @@ const Commitment: React.FC = () => {
           xl:grid-cols-3"
           >
             <div className="w-full bg-white p-8 rounded-2xl">
-              <h2 className="font-semibold lg:text-24 font-chakrapetch mb-5">
+              <h2 className="font-semibold text-center lg:text-start lg:text-24 font-chakrapetch mb-5">
                 Rebranding Strategy for a Growing
               </h2>
               <div className="w-fit flex items-center pt-8 pb-10 overflow-hidden">
@@ -83,7 +83,7 @@ const Commitment: React.FC = () => {
               </div>
             </div>
             <div className="w-full bg-white p-8 rounded-2xl">
-              <h2 className="font-semibold lg:text-24 font-chakrapetch mb-5">
+              <h2 className="font-semibold lg:text-24  text-center lg:text-start font-chakrapetch mb-5">
                 Rebranding Strategy for a Growing
               </h2>
               <div className="w-full h-[230px]">
@@ -96,7 +96,7 @@ const Commitment: React.FC = () => {
                 />
               </div>
             </div>
-            <div className="w-full bg-white p-8 rounded-2xl flex justify-between items-start flex-col">
+            <div className="w-full  text-center lg:text-start bg-white p-8 rounded-2xl flex justify-between items-start flex-col">
               <div className="mb-8">
                 <h2 className="font-semibold lg:text-24 font-chakrapetch pb-1">
                   Rebranding Strategy for a Growing

@@ -8,8 +8,7 @@ const Blog: React.FC = () => {
   return (
     <>
       <section
-        className="overflow-hidden py-14 lg:py-18
-      xl:py-22 bg-prim-light"
+        className="overflow-hidden py-14 lg:py-18 bg-prim-light"
       >
         <div
           className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 space-y-14
@@ -39,25 +38,27 @@ const Blog: React.FC = () => {
                   />
                   <span className="absolute right-5 bottom-5 max-w-sm text-white font-chakrapetch bg-white/10 font-semibold backdrop-blur-sm rounded-sm text-2xl text-center p-3">
                     {item.date}
-                  </span> 
+                  </span>
                 </div>
                 <div className="blog-content px-2 py-5 space-y-5">
                   <p className="">
                     <span
-                      className="border border-border px-2 rounded-sm
+                      className="border border-dark px-2 rounded-sm
                         "
                     >
                       {item.category}
                     </span>
-                    by: {item.author}
+                    &nbsp;by: {item.author}
                   </p>
-                  <h4 className="font-unbounded font-medium pb-2">
+                  <h4 className="font-unbounded  text-center md:text-start font-medium pb-2">
                     {item.title}
                   </h4>
-                  <p className="leading-6 text-pera dark">{item.description}</p>
+                  <p className="leading-6 text-center md:text-start text-pera dark">
+                    {item.description}
+                  </p>
                   <Link
                     href={`/blog/${item.slug}`}
-                    className="text-sm lg:text-16 w-fit rounded-full font-chakrapetch font-semibold flex gap-2 px-2 justify-center items-center tracking-wider group mt-5 lg:mt-0"
+                    className="text-sm lg:text-16 bg-dark text-white ps-4 pe-2 py-2 mx-auto md:mx-0 w-fit rounded-full font-chakrapetch font-semibold flex gap-2 px-2 justify-center items-center tracking-wider group mt-5 lg:mt-0"
                   >
                     Read More
                     <Icon
@@ -89,18 +90,18 @@ const Blog: React.FC = () => {
                     </span>
                   </div>
                   <div className="blog-content px-2 py-5 space-y-5">
-                    <p className="">
-                      <span className="border border-border px-2 rounded-sm">
+                    <p className=" text-center md:text-start">
+                      <span className="border border-dark px-2 rounded-sm">
                         {item.category}
                       </span>
-                      by: {item.author}
+                      &nbsp; by: {item.author}
                     </p>
-                    <h4 className="font-unbounded pb-2 text-20 font-medium">
+                    <h4 className="font-unbounded pb-2  text-center md:text-start text-20 font-medium">
                       {item.title}
                     </h4>
                     <Link
                       href={`/blog/${item.slug}`}
-                      className="text-sm lg:text-16 w-fit rounded-full font-chakrapetch font-semibold flex gap-2 px-2 justify-center items-center tracking-wider group mt-5 lg:mt-0"
+                      className="text-sm lg:text-16  bg-dark text-white ps-4 pe-2 py-2 mx-auto md:mx-0 w-fit rounded-full font-chakrapetch font-semibold flex gap-2 px-2 justify-center items-center tracking-wider group mt-5 lg:mt-20"
                     >
                       Read More
                       <Icon
