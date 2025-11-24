@@ -39,7 +39,7 @@ const Blog: React.FC = () => {
                   />
                   <span className="absolute right-5 bottom-5 max-w-sm text-white font-chakrapetch bg-white/10 font-semibold backdrop-blur-sm rounded-sm text-2xl text-center p-3">
                     {item.date}
-                  </span>
+                  </span> 
                 </div>
                 <div className="blog-content px-2 py-5 space-y-5">
                   <p className="">

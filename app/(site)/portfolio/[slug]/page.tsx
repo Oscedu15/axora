@@ -7,8 +7,13 @@ import portfolio1 from "@/public/images/protfoliodetails/project-gallery-1.webp"
 import portfolio2 from "@/public/images/protfoliodetails/project-gallery-2.webp";
 import portfolio3 from "@/public/images/protfoliodetails/project-gallery-3.webp";
 import { portfolioData } from "@/app/api/data";
+import { Metadata } from "next";
 
 type Props = { params: Promise<{ slug: string }> };
+
+export const metadata: Metadata = {
+  title: "PortfolioDetails | Axora",
+};
 
 const projectsValue = [
   { label: "Clients", value: "Innovate Iteriors Group" },
