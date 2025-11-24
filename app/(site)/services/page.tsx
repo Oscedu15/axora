@@ -2,6 +2,11 @@ import HeroSub from "@/components/SharedComponents/HeroSub";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { servicesData } from "@/app/api/data";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Services | Axora",
+};
 
 export default function Services() {
   const breadcrumbLiks = [

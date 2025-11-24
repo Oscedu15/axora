@@ -3,6 +3,11 @@ import Link from "next/link";
 import HeroSub from "@/components/SharedComponents/HeroSub";
 import { Icon } from "@iconify/react";
 import Team from "@/components/Home/Team";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About | Axora",
+};
 
 export default function About() {
   const breadcrumbLiks = [
