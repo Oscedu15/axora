@@ -94,26 +94,17 @@ const Header: React.FC = () => {
             onClick={() => setNavbarOpen(false)}
             aria-label="Close mobile menu"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6112 12"
-              />
-            </svg>
+            <Icon icon="material-symbols:close" width="25" height="25" />
           </button>
         </div>
         <nav className="flex flex-col items-start py-4">
           {headerData?.map((item, index) => (
-            <MobileHeaderLink key={index} item={item} />
+            <MobileHeaderLink
+              key={index}
+              item={item}
+              setNavbarOpen={setNavbarOpen}
+              navbarOpen={navbarOpen}
+            />
           ))}
         </nav>
         {/* Search */}

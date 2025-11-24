@@ -52,7 +52,7 @@ export default function Blog() {
   return (
     <>
       <HeroSub title="Blog" description="" breadcrumbLinks={breadcrumbLiks} />
-      <div className="overflow-hidden py-14 lg:py-18 xl:py-22 bg-prim-light">
+      <div className="overflow-hidden py-14 lg:py-18 bg-prim-light">
         <div
           className="container flex items-center mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 space-y-14 gap-5 flex-col lg:flex-row
           "
@@ -61,7 +61,7 @@ export default function Blog() {
             {filterdBlog.length > 0 ? (
               filterdBlog.map((item) => (
                 <div
-                  className="blog-item border p-3 md:p-5 relative border-border w-full bg-white rounded-2xl group h-auto my-3"
+                  className="blog-item borde hover:shadow-2xl transition-shadow duration-200 p-3 md:p-5 relative border-border w-full bg-white rounded-2xl group h-auto my-3"
                   key={item.id}
                 >
                   <div className="blog-image w-full rounded-2xl overflow-hidden">
@@ -76,12 +76,12 @@ export default function Blog() {
                       {item.date}
                     </span>
                   </div>
-                  <div className="blog-content px-2 py-2 space-y-5">
+                  <div className="blog-content text-center md:text-start px-2 py-2 space-y-5">
                     <p className="">
-                      <span className="border border-border px-2 rounded-sm">
+                      <span className="border border-dark px-2 rounded-sm">
                         {item.category}
                       </span>
-                      By: {item.author}
+                      &nbsp;By: {item.author}
                     </p>
                     <h4 className="font-unbounded font-medium pb-2">
                       {item.title}
@@ -91,7 +91,7 @@ export default function Blog() {
                     </p>
                     <Link
                       href={`/blog/${item.slug}`}
-                      className="w-fit rounded-full font-chakrapetch font-semibold flex gap-2 px-2 justify-center items-center tracking-wider group mt-5 lg:mt-0 "
+                      className="w-fit rounded-full bg-dark text-white ps-4 pe-2 py-2 mx-auto md:mx-0 font-chakrapetch font-semibold flex gap-2 px-2 justify-center items-center tracking-wider group mt-5 lg:mt-0 "
                     >
                       Read More
                       <Icon
@@ -151,16 +151,18 @@ export default function Blog() {
                 </div>
               </div>
               <div className="border border-gray-100 shadow-lg bg-white p-5 rounded-xl">
-                <div className="text-black pb-5">Categories</div>
+                <h5 className="text-black font-bold pb-5">Categories</h5>
                 <ul className="flex flex-col gap-2">
                   <li className="flex justify-between items-center">
                     <span className="font-semibold text-dark">Business</span>(3)
                   </li>
                   <li className="flex justify-between items-center">
-                    <span className="font-semibold text-dark">Corporate</span>(4)
+                    <span className="font-semibold text-dark">Corporate</span>
+                    (4)
                   </li>
                   <li className="flex justify-between items-center">
-                    <span className="font-semibold text-dark">Designing</span>(2)
+                    <span className="font-semibold text-dark">Designing</span>
+                    (2)
                   </li>
                   <li className="flex justify-between items-center">
                     <span className="font-semibold text-dark">Innovation</span>

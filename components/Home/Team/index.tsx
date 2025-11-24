@@ -13,7 +13,7 @@ const Team: React.FC<TeamProps> = ({ limit }) => {
   const displayTeam = limit ? teamsData.slice(0, limit) : teamsData;
   return (
     <>
-      <div className="overflow-hidden py-14 lg:py-18 xl:py-22 bg-prim-light">
+      <div className="overflow-hidden py-14 lg:py-18 bg-prim-light">
         <div
           className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 space-y-14
           "
@@ -22,7 +22,7 @@ const Team: React.FC<TeamProps> = ({ limit }) => {
             <span className="sub-title text-14 font-chakrapetch capitalize ps-5 pe-3 bg-prim text-white py-1 rounded-xl relative">
               Meet Our Team
             </span>
-            <h2 className="w-full lg:text-start lg:w-3/4 mt-4 font-chakrapetch max-w-[600px] lg:text-35 font-semibold">
+            <h2 className="w-full text-center lg:text-start lg:w-3/4 mt-4 font-chakrapetch max-w-[600px] lg:text-35 font-semibold">
               Meet Our Team Success Stories Fuel our Innovation.
             </h2>
           </div>

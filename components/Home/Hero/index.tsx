@@ -1,11 +1,19 @@
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
     <div className="hero h-screen w-full bg-midnight_text relative overflow-hidden pt-44 pb-20">
-      <div className="hero-image absolute bg-[url(/images/hero/hero-bg.jpg)] top-0 left-0 w-full h-full bg-cover bg-no-repeat"></div>
+      <Image
+        src="/images/hero/hero-bg.jpg"
+        alt="Hero background image"
+        fill
+        style={{ objectFit: "cover" }}
+        className="absolute top-0 left-0 z-0"
+        priority
+      />
       <div
         className="shape-1 absolute z-30 top-0 left-0 h-auto w-[300px] flex justify-start
       items-start"
@@ -23,12 +31,12 @@ const Hero: React.FC = () => {
       px-4 h-full flex flex-col justify-center items-start group"
       >
         <div className="hero-content text-white">
-          <h1 className="text-white text-center md:text-start mb-9 lg:mb-3 w-full lg:w-3/4">
+          <h1 className="text-white text-center lg:text-start mb-9 lg:mb-3 w-full lg:w-3/4">
             Transforming Ideas Into Reakity
           </h1>
           <Link
             href="/about"
-            className="text-white bg-dark h-[50px] text-16 lg:text-sm w-fit rounded-full font-chakrapetch font-semibold flex gap-2 ps-4 pe-2 py-2 justify-center items-center
+            className="text-white mx-auto lg:mx-0 bg-dark h-[50px] text-16 lg:text-sm w-fit rounded-full font-chakrapetch font-semibold flex gap-2 ps-4 pe-2 py-2 justify-center items-center
             tracking-wider group"
           >
             Get Started Now

@@ -51,7 +51,7 @@ const PorfolioDetails = ({ params }: Props) => {
           "
         >
           <div className="w-full lg:w-[60%]">
-            <div className="bg-white p-5 rounded-2xl space-y-6">
+            <div className="bg-white pt-3 md:p-5 rounded-2xl space-y-6">
               <Image
                 src={item.image}
                 alt={item.title}
@@ -62,7 +62,7 @@ const PorfolioDetails = ({ params }: Props) => {
               <h4 className="font-unbounded text-center lg:text-start font-medium uppercase text-3xl">
                 {item.title}
               </h4>
-              <p className="pb-4 text-dark text-16 leading-6">
+              <p className="pb-4 text-center lg:text-start text-dark text-16 leading-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Sapiente doloremque cumque, quo, porro quas, non quam ut
                 voluptatem eius dolore ex at assumenda similique sed magni!
@@ -71,7 +71,7 @@ const PorfolioDetails = ({ params }: Props) => {
               <h4 className="font-unbounded font-medium text-center lg:text-start text-3xl">
                 Project Overview
               </h4>
-              <p className="pb-4 text-pera-dark text16 leading-6">
+              <p className="pb-4 text-pera-dark  text-center lg:text-start text16 leading-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
                 pariatur, reiciendis assumenda facere explicabo soluta neque,
                 voluptate unde vel, non magni molestias dolor aut esse
@@ -80,7 +80,7 @@ const PorfolioDetails = ({ params }: Props) => {
               <h4 className="font-unbounded text-center lg:text-start font-medium text-3xl">
                 Project Gallery
               </h4>
-              <p className="pb-4 text-pera-dark text16 leading-6">
+              <p className="pb-4 text-pera-dark  text-center lg:text-start text16 leading-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
                 pariatur, reiciendis assumenda facere explicabo soluta neque.
               </p>

@@ -93,11 +93,11 @@
   }
 
   h1 {
-    @apply md:text-50 text-28 font-medium capitalize;
+    @apply lg:text-60 md:text-50 text-40 font-medium capitalize;
   }
 
   h2 {
-    @apply md:text-40 text-24 font-medium capitalize;
+    @apply md:text-40 text-28 font-medium capitalize;
   }
 
   h3 {

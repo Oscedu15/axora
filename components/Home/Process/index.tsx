@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 const Proccess: React.FC = () => {
   return (
     <>
-      <section className="bg-light overflow-hidden py-14 lg:py-18 xl:22 bg-prim-light">
+      <section className="bg-light overflow-hidden py-14 lg:py-18 bg-prim-light">
         <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 space-y-14">
           <div className="proccess-content flex justify-between items-start lg:items-end gap-2 flex-col lg:flex-row">
             <div className="">

@@ -17,7 +17,7 @@ export const headerData: HeaderItem[] = [
     href: "/services",
     submenu: [
       { label: "Services List", href: "/services" },
-      { label: "Services Details", href: "/services-details" },
+      { label: "Services Details", href: "/services/business" },
     ],
   },
   {
@@ -25,7 +25,7 @@ export const headerData: HeaderItem[] = [
     href: "/portfolio",
     submenu: [
       { label: "Portfolio", href: "/portfolio" },
-      { label: "Portfolio Details", href: "/portfolio" },
+      { label: "Portfolio Details", href: "/portfolio/contable" },
     ],
   },
   {
@@ -33,7 +33,7 @@ export const headerData: HeaderItem[] = [
     href: "/blog",
     submenu: [
       { label: "Blog", href: "/blog" },
-      { label: "Blog Details", href: "/blog" },
+      { label: "Blog Details", href: "/blog/historia-musica-electronica" },
     ],
   },
   { label: "Contact", href: "/contact" },
